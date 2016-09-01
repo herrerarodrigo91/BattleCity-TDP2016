@@ -1,0 +1,42 @@
+//la clase juego tiene una matriz de char que indica las posiciones de la matriz que tiene las 
+//imagenes de los obstaculos.
+movimientoJuegador(){
+	obtener oyente de las teclas de moviemiento
+	si(tecla== arriba){
+		arreglo sigPos= jugador.getPosMapa();
+		sumo uno al segundo componente de siPos
+		si (mtriz mapa con coordenadas sigPos== v)	{ 		//letra v indica que esa celda esta vacia
+			eliminar grafico de tanque de la celda jugador.getPosMapa()
+			agregar grafico de tanque en la selda sigPos
+			jugadro.setPosMapa(sigPos)
+		}		 
+	}sino{
+		si(tecla==abajo){
+			arreglo sigPos= jugador.getPosMapa();
+			resto uno al segundo componente de siPos a menos que el tanque este en la parte inferior del mapa
+			si (mtriz mapa con coordenadas sigPos== v)	{ 		
+				eliminar grafico de tanque de la celda jugador.getPosMapa()
+				agregar grafico de tanque en la selda sigPos
+				jugadro.setPosMapa(sigPos)
+			}
+		}sino{
+			si(tecla==derecha){
+				arreglo sigPos= jugador.getPosMapa();
+				sumo uno al primer componente de siPos a menos que el tanque este en la parte extrema derecha del mapa
+				si (mtriz mapa con coordenadas sigPos== v)	{ 		
+					eliminar grafico de tanque de la celda jugador.getPosMapa()
+					agregar grafico de tanque en la selda sigPos
+					jugadro.setPosMapa(sigPos)
+				}
+			}sino{
+				si(tecla==izquiera){
+					arreglo sigPos= jugador.getPosMapa();
+					resto uno al primer componente de siPos a menos que el tanque este en la parte extrema izquierda del mapa
+					si (mtriz mapa con coordenadas sigPos== v)	{ 		
+						eliminar grafico de tanque de la celda jugador.getPosMapa()
+						agregar grafico de tanque en la selda sigPos
+						jugadro.setPosMapa(sigPos)
+					}
+				}
+			}
+}

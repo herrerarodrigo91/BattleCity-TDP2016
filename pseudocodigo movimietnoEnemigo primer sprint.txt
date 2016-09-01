@@ -1,0 +1,11 @@
+movimientoEnemigo(){
+	
+	mientras(siga juego o enemigo sigue vivio){
+		posActual=enemigo.getPosMapa()
+		arreglo celdasLibres=calcularCeldasLibres();
+		sigPos=elejir aleatoriamente una celda
+		eliminar grafico de tanque de la celda posActual
+		agregar grafico de tanque en la selda sigPos
+		enemigo.setPosMapa(sigPos)
+	}
+}

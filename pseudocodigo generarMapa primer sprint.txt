@@ -1,0 +1,35 @@
+crear mapa(){
+	mapa= nueva matriz[n][n] 			// los n dependen de la fluidez que le demos al juego
+	abrimos archivoMapa 				// el archivo determina la forma del mapa
+	char letra= primera letra del archivo mapa //b=ladrillo i=acero w=agua t=arbol e=agila n=locaciion preestablecida power-up
+	recorrer la matriz celda por celda{
+		si(letra==b){
+			insertar imagen ladrillo en la celda
+		}sino{
+			si(letra==i){
+				insertar imagen acero en la celda
+			}sino{
+				si(letra==w){
+					insertar imagen agua en la celda
+				}sino{
+					si(letra==t){
+						insertar imagen arbol en la celda
+					}sino{
+						si(letra==e){
+							insertar imagen aguila en la celda
+						}sino{
+							si(letra==n){
+								insertar un imagen power-up en la celda
+							}sino{
+								si(letra==v){
+									insertar una imagen de camino libre
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		letra=siguiente letra del archivoMapa 		//manejo de archivos
+	}
+}
